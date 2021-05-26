@@ -21,20 +21,39 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q3F-uU-jyj">
-                                    <size key="itemSize" width="393" height="324"/>
+                                    <size key="itemSize" width="393" height="814"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="RCc-wr-YiX">
-                                        <rect key="frame" x="10.5" y="0.0" width="393" height="324"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="393" height="814"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="k18-DT-uAk">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="324"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="814"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fNC-4B-oWz">
+                                                    <rect key="frame" x="0.0" y="343" width="393" height="128"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYC-r9-DNK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="YYC-r9-DNK" secondAttribute="height" multiplier="393:128" id="ay9-kY-IEB"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="fNC-4B-oWz" secondAttribute="trailing" id="1b2-yA-NHF"/>
+                                                <constraint firstItem="fNC-4B-oWz" firstAttribute="leading" secondItem="k18-DT-uAk" secondAttribute="leading" id="l6z-lh-BcN"/>
+                                                <constraint firstItem="fNC-4B-oWz" firstAttribute="centerY" secondItem="k18-DT-uAk" secondAttribute="centerY" id="vXb-pK-Hhe"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="393" height="324"/>
+                                        <size key="customSize" width="393" height="814"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

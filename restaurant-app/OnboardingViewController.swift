@@ -45,6 +45,9 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         let itemHeight = collectionView.bounds.height
         return CGSize(width: itemWidth, height: itemHeight)
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 
 
 
